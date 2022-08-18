@@ -110,33 +110,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./source/hello.js":
-/*!*************************!*\
-  !*** ./source/hello.js ***!
-  \*************************/
+/***/ "./source/bundle1/hello.js":
+/*!*********************************!*\
+  !*** ./source/bundle1/hello.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar hello = 'Hello';\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (hello);\n\n\n//# sourceURL=webpack://webpack-test/./source/hello.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet hello = 'Hello';\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (hello);\n\n\n//# sourceURL=webpack://webpack-test/./source/bundle1/hello.js?");
 
 /***/ }),
 
-/***/ "./source/index.js":
-/*!*************************!*\
-  !*** ./source/index.js ***!
-  \*************************/
+/***/ "./source/bundle1/index.js":
+/*!*********************************!*\
+  !*** ./source/bundle1/index.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello.js */ \"./source/hello.js\");\n/* harmony import */ var _world_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./world.js */ \"./source/world.js\");\n/* harmony import */ var _style_App_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style/App.css */ \"./style/App.css\");\n\n\n\n\ndocument.querySelector('#root').innerHTML = _hello_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"] + _world_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\n\n\n//# sourceURL=webpack://webpack-test/./source/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hello_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello.js */ \"./source/bundle1/hello.js\");\n/* harmony import */ var _world_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./world.js */ \"./source/bundle1/world.js\");\n/* harmony import */ var _style_App_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../style/App.css */ \"./style/App.css\");\n\n\n\n\ndocument.querySelector('#root').innerHTML = _hello_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"] + _world_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\n\n\n//# sourceURL=webpack://webpack-test/./source/bundle1/index.js?");
 
 /***/ }),
 
-/***/ "./source/world.js":
-/*!*************************!*\
-  !*** ./source/world.js ***!
-  \*************************/
+/***/ "./source/bundle1/world.js":
+/*!*********************************!*\
+  !*** ./source/bundle1/world.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar world = 'World';\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (world);\n\n//# sourceURL=webpack://webpack-test/./source/world.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nlet world = 'World';\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (world);\n\n//# sourceURL=webpack://webpack-test/./source/bundle1/world.js?");
 
 /***/ })
 
@@ -217,7 +217,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./source/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./source/bundle1/index.js");
 /******/ 	
 /******/ })()
 ;
