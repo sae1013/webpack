@@ -1,1 +1,0 @@
-(()=>{"use strict";console.log("임포트 파일입니다."),document.querySelector("#root").innerHTML="HelloWorld"})();
